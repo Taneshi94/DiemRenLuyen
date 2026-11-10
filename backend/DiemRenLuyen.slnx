@@ -1,7 +1,0 @@
-<Solution>
-  <Project Path="ApiGateway/ApiGateway.csproj" />
-  <Project Path="AuthServer/AuthServer.csproj" />
-  <Project Path="EventService/EventService.csproj" />
-  <Project Path="ScoreService/ScoreService.csproj" />
-  <Project Path="SharedKernel/SharedKernel.csproj" />
-</Solution>
