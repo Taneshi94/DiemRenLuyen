@@ -5,7 +5,7 @@
       "label": "build-all",
       "command": "dotnet",
       "type": "process",
-      "args": ["build", "${workspaceFolder}/backend/DiemRenLuyen.sln"],
+      "args": ["build", "${workspaceFolder}/backend/DiemRenLuyen.slnx"],
       "problemMatcher": "$msCompile"
     }
   ]
