@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build-all",
+      "command": "dotnet",
+      "type": "process",
+      "args": ["build", "${workspaceFolder}/backend/DiemRenLuyen.sln"],
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}

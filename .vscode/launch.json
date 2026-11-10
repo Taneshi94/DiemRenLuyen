@@ -1,0 +1,48 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Gateway",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-all",
+      "program": "${workspaceFolder}/backend/ApiGateway/bin/Debug/net10.0/ApiGateway.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/backend/ApiGateway",
+      "stopAtEntry": false
+    },
+    {
+      "name": "Launch AuthServer",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${workspaceFolder}/backend/AuthServer/bin/Debug/net10.0/AuthServer.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/backend/AuthServer",
+      "stopAtEntry": false
+    },
+    {
+      "name": "Launch EventService",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${workspaceFolder}/backend/EventService/bin/Debug/net10.0/EventService.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/backend/EventService",
+      "stopAtEntry": false
+    },
+    {
+      "name": "Launch ScoreService",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${workspaceFolder}/backend/ScoreService/bin/Debug/net10.0/ScoreService.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/backend/ScoreService",
+      "stopAtEntry": false
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Run All Backend Services",
+      "configurations": ["Launch Gateway", "Launch AuthServer", "Launch EventService", "Launch ScoreService"]
+    }
+  ]
+}
