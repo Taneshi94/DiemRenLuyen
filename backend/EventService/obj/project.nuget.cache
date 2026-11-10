@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "hrz4dU6HCN0=",
+  "dgSpecHash": "9arlAr7zWSc=",
   "success": true,
   "projectFilePath": "D:\\Taneshi\\TH ChuyenNganh\\DiemRenLuyen\\backend\\EventService\\EventService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LNV\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.9\\microsoft.aspnetcore.openapi.10.0.9.nupkg.sha512",
+    "C:\\Users\\LNV\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\11.0.0\\microsoft.entityframeworkcore.tools.11.0.0.nupkg.sha512",
     "C:\\Users\\LNV\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
   ],
   "logs": [

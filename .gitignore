@@ -1,0 +1,54 @@
+## ----------------------------------------------------------------------
+## 1. File & Thư mục sinh ra do Build / Compile (.NET C#)
+## ----------------------------------------------------------------------
+[Bb]in/
+[Oo]bj/
+*.user
+*.userosscache
+*.sln.docstates
+*.dll
+*.exe
+*.pdb
+
+## ----------------------------------------------------------------------
+## 2. VS Code & Visual Studio Config (Cấu hình máy cá nhân)
+## ----------------------------------------------------------------------
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## ----------------------------------------------------------------------
+## 3. Web Client (Angular / Node.js)
+## ----------------------------------------------------------------------
+client-web/node_modules/
+client-web/dist/
+client-web/.angular/
+client-web/tmp/
+*.log
+npm-debug.log*
+
+## ----------------------------------------------------------------------
+## 4. Mobile Client (Kotlin / Android)
+## ----------------------------------------------------------------------
+client-mobile/.gradle/
+client-mobile/build/
+client-mobile/captures/
+client-mobile/.externalNativeBuild/
+client-mobile/.cxx/
+*.apk
+*.aar
+local.properties
+
+## ----------------------------------------------------------------------
+## 5. Security & Environment Files (Bảo mật thông tin sensitive)
+## ----------------------------------------------------------------------
+# Lưu ý: Không đưa file chứa connection string SQL Server thật hoặc Secret Key lên Git
+appsettings.Development.json
+*.env
+*.pem
+*.pfx
