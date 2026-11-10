@@ -23,31 +23,39 @@
 *.sln.docstates
 
 ## ----------------------------------------------------------------------
-## 3. Web Client (Angular / Node.js)
+## 3. Web Client (Angular / Node.js Workspace)
 ## ----------------------------------------------------------------------
-client-web/node_modules/
-client-web/dist/
-client-web/.angular/
-client-web/tmp/
+frontend/frontend-workspace/node_modules/
+frontend/frontend-workspace/dist/
+frontend/frontend-workspace/.angular/
+frontend/frontend-workspace/tmp/
 *.log
 npm-debug.log*
 
 ## ----------------------------------------------------------------------
-## 4. Mobile Client (Kotlin / Android)
+## 4. Mobile Client (Kotlin / Android Studio)
 ## ----------------------------------------------------------------------
-client-mobile/.gradle/
-client-mobile/build/
-client-mobile/captures/
-client-mobile/.externalNativeBuild/
-client-mobile/.cxx/
+mobile/student-app/.gradle/
+mobile/student-app/build/
+mobile/student-app/captures/
+mobile/student-app/.externalNativeBuild/
+mobile/student-app/.cxx/
+mobile/student-app/local.properties
+
+mobile/manager-app/.gradle/
+mobile/manager-app/build/
+mobile/manager-app/captures/
+mobile/manager-app/.externalNativeBuild/
+mobile/manager-app/.cxx/
+mobile/manager-app/local.properties
+
 *.apk
 *.aar
-local.properties
 
 ## ----------------------------------------------------------------------
 ## 5. Security & Environment Files (Bảo mật thông tin sensitive)
 ## ----------------------------------------------------------------------
-# Lưu ý: Không đưa file chứa connection string SQL Server thật hoặc Secret Key lên Git
+# Không đưa file chứa connection string SQL Server thật, biến môi trường hoặc Secret Key lên Git
 appsettings.Development.json
 *.env
 *.pem
