@@ -60,3 +60,8 @@ appsettings.Development.json
 *.env
 *.pem
 *.pfx
+
+## ----------------------------------------------------------------------
+## 6. .NET Entity Framework Core Migrations (Bỏ qua lịch sử Migration local)
+## ----------------**/
+**/Migrations/

@@ -1,10 +1,11 @@
+using EventService;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Đọc Connection String
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 // Cấu hình JWT Authentication validate token
@@ -32,6 +33,8 @@ builder.Services.AddAuthentication(options =>
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddDbContext<EventDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 

@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using ScoreService;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -32,6 +34,8 @@ builder.Services.AddAuthentication(options =>
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddDbContext<ScoreDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
